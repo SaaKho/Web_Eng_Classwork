@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    
+
+}
+
+.container{
+    height: 70vh;
+    width: 100vh;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Form{
+    height: 100vh;
+    width: 100vw;
+    display: flex; 
+    
+}
+.magnifier-setting{
+    padding: 10px 0px 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.Box{
+    width: 97%;
+    height: 62vh;
+    margin-left: auto;
+    display: flex;
+    
+}
+
+.left-box{
+   padding-left: 15px;
+}
+
+.left-box,.right-box{
+        
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        
+}

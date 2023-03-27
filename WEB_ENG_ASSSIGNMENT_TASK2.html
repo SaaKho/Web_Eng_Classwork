@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Task</title>
+    <style>
+        * , ::after , ::before{
+            box-sizing: inherit;
+        }
+
+        .html{
+            box-sizing: border-box;
+
+        }
+        #piano{
+            width: 998px;
+            height: 230px;
+            background-color: #00471b;
+            margin: 80px auto;
+            padding: 90px 20px 0px 20px;
+            position: relative;
+            border-radius: 10px;
+ 
+        }
+        #keys{
+            width: 95%;
+            height: 180px;
+            background-color: #040404;
+            overflow: hidden;
+            padding-left: 2px;
+
+        }
+        .white-key{
+            width: 40px;
+            height: 175px;
+            background-color: #fff;
+            position: relative;
+            margin: 2px;
+            float: left;
+            border-radius: 0 0 3px 3px;
+        }
+        .white-key.black--key::after{
+            width: 32px;
+            height: 100px;
+            content: "";
+            background-color: #1d1e22;
+            position: absolute;
+            left: -18px;
+        }
+
+        @media screen and (max-width: 768px)
+        {
+            #piano{
+                width: 358px;
+            }
+            #keys{
+                width: 318px;
+            }
+
+        }
+        @media (max-width: 1199px) and (min-width: 769px)
+        {
+            #piano{
+                width: 675px;
+            }
+            #keys{
+                width: 633px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id ="piano">
+        <div id="keys">
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+            <div class="white-key black--key"></div>
+    </div>    
+</body>
+</html>

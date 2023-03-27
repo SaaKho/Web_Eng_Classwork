@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q1css.css">
+    <title>Question-1</title>
+</head>
+<body>
+    <script>
+        function updateTextInput(val)
+        {
+          document.getElementById('textInput').value=val; 
+        }
+    </script>
+
+    <div class="Form">
+
+        <!-- this is a main container -->
+        <div class="container">
+
+            <div class="magnifier-setting">
+                <h2>Magnifier Settings</h2>
+            </div>
+            <div class="Box">
+ 
+                <div class="left-box" style=" flex: 1;">
+                    <div>
+                        <label for="zoomBoxWidth">Zoom Box Width</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="zoomBoxHeight"> Zoom Box Height</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="ImageSize">Image Size</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="zoomBoxPosition">Zoom Box Position</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="zoomBoxPosition2">Zoom Box Position for mobile devices</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="Loading">Loading label</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="opacity">Lens Opacity</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="blur">Blur</label>
+                    </div>
+                    
+                </div>
+                <div class="right-box" style="flex: 2;">
+
+                    <div style="display: flex;">
+                        <input type="text" id ="BoxWidth" value="auto" style="width: 120px; height: 19px; margin-right:5px; margin-top: 3px;">
+                        <p style="margin: 0px; font-size: 12px; padding-top: 5px;"><i>The width of the magnifier box(default auto)</i></p>
+                    </div>
+                    <br>
+                    <div style="display: flex;">
+                        <input type="text"  id ="BoxHeight" value="auto" style="width: 120px; height: 19px; margin-right:5px">
+                        <p style="margin: 0px; font-size: 12px; padding-top: 4px;"><i>The height of the magnifier box(default auto)</i></p>
+                    </div>
+                    <br>
+                    <div style="display: flex;">
+                        <input type="text"  id ="imagesize" value="600" style="width: 40px; height: 18px; margin-right:5px">
+                        <p style=" font-size: 10px; padding-top: 5px; margin-right: 4px;"> X </p>
+                        <input type="text"  id ="imagesize2" value="600" style="width: 40px; height: 18px; margin-right:5px">
+                        <p style="margin: 0px; font-size: 12px; padding-top: 5px;"><i>px  The size of the images used within the magnifier box</i></p>
+                    </div>
+                    <div style="display: flex;">
+                        <label  style="font-size: 15px; ">
+                            <input type="checkbox" name="agree" value="yes" style="padding-top: 5px">
+                            Do you want to hard crop the image?
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <select name="zoomBoxPosition" id="zoomBoxPosition" style="width: 60px; height: 23px; margin-right:5px">
+                            <option value="top">Inside</option>
+                            <option value="top">Top</option>
+                            <option value="right">Right</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="left">Left</option>
+                        </select>
+                        <p style="margin: 0px; font-size: 12px; padding-top: 5px;"><i>The magnifier position</i></p>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <select name="zoomBoxPosition2" id="zoomBoxPosition2" style="width: 60px; height: 23px; margin-right:5px">
+                            <option value="top">Inside</option>
+                            <option value="top">Top</option>
+                            <option value="right">Right</option>
+                            <option value="bottom">Bottom</option>
+                            <option value="left">Left</option>
+                        </select>
+                        <p style="margin: 0px; font-size: 12px; padding-top: 5px;"><i>The magnifier position for the mobile devices (iPhone,Android,etc.)</i></p>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <input type="text" value="Waiting..." id="Waiting" name="Waiting" style="width: 120px; height: 19px; margin-right:5px; margin-top: 18px;">
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);" > 
+                        <input type="text" id="textInput" value="" style="width: 50px; height: 19px; margin-right:5px;">
+                    </div>
+                    <br>
+                    <br>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="agree" value="yes" style="width: 50px; height: 19px;">
+                        Add a blur effect to the samll image on mouse hover
+                    </div>
+                    <br>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
