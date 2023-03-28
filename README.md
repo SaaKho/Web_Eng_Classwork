@@ -10,3 +10,4 @@ Another attempt was made to make a Piano using the basic stack
 
 In the third partI tried to replicate a page on Khan-Academy
 
+Today I started off with the First Question of the Second Assignment. I have made just entered the Input fields of the Simple Wish List and the Add button the changes hsve been commited
