@@ -8,7 +8,6 @@ In the first few files I have attempted to make a simple form using HTML and CSS
 
 Another attempt was made to make a Piano using the basic stack 
 
-Assignment 3 
-
+Making a blog post UI and then I will start working the fullstack app
 
 
