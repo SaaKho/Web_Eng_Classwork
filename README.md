@@ -10,6 +10,3 @@ Another attempt was made to make a Piano using the basic stack
 
 
 
-
-I think I will manage 
-
