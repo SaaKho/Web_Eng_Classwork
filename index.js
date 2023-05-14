@@ -140,6 +140,7 @@ app.delete('/deleteUser/:id', async (req, res) => {
 
 /*-----------------------------CRUD FOR BLOGS---------------------------------------*/
 
+/*Tested and Verified*/ 
 app.get('/getBlogs', (req, res) => {
     Blog.find({})
         .then((blogs) => {
@@ -152,6 +153,7 @@ app.get('/getBlogs', (req, res) => {
 });
 
 // Create new blog
+/*Tested and Verified */
 app.post('/createBlogs', (req, res) => {
     const { blogName, author, blogContent } = req.body;
     const newBlog = new Blog({ blogName, author, blogContent });
@@ -165,7 +167,8 @@ app.post('/createBlogs', (req, res) => {
         });
 });
 
-// Read a specific blog
+// Read a blog
+/*Tested and Verified */
 app.get('/readBlogs/:id', (req, res) => {
     const { id } = req.params;
     Blog.findById(id)
@@ -184,6 +187,7 @@ app.get('/readBlogs/:id', (req, res) => {
 
 
 // Update a blog
+/*Tested and Verified */
 app.put('/updateBlogs/:id', async (req, res) => {
     const { id } = req.params;
     const { blogName, author, blogContent } = req.body;
@@ -199,6 +203,7 @@ app.put('/updateBlogs/:id', async (req, res) => {
 });
 
 // Delete a blog
+/*Tested and Verified */
 app.delete('/deleteBlogs/:id', async (req, res) => {
     const { id } = req.params;
     try {
